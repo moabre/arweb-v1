@@ -10,13 +10,13 @@ import {
   NavItem,
 } from './NavBarElements'
 
-export const Navbar = () => {
+export const Navbar = ({ toggleState }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo>dolla</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggleState}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -28,6 +28,9 @@ export const Navbar = () => {
             </NavItem>
             <NavItem>
               <NavLinks to='projects'>Projects</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to='contact'>Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
