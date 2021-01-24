@@ -33,6 +33,7 @@ export const FormContainer = styled.div`
   width: 100%;
   max-width: 500px;
   color: white;
+  padding: 1rem;
 
   & > form {
     width: 100%;
