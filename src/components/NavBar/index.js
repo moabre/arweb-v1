@@ -15,7 +15,7 @@ export const Navbar = ({ toggleState }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo>dolla</NavLogo>
+          <NavLogo>moabre</NavLogo>
           <MobileIcon onClick={toggleState}>
             <FaBars />
           </MobileIcon>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import HeroSection from '../components/Hero'
+import InfoSection from '../components/InfoSection'
 import { Navbar } from '../components/NavBar'
 import SideBar from '../components/SideBar'
 
@@ -11,6 +12,7 @@ export const Home = () => {
       <SideBar isOpen={isOpen} toggleState={toggleState} />
       <Navbar toggleState={toggleState} />
       <HeroSection />
+      <InfoSection />
     </>
   )
 }

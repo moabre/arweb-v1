@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
   HeroContainer,
   HeroBg,
@@ -13,15 +13,15 @@ import {
   Button,
   ArrowDown,
   ArrowDownShort,
-} from './HeroElements'
-import Typing from 'react-typing-animation'
+} from './HeroElements';
+import Typing from 'react-typing-animation';
 
 const HeroSection = () => {
-  const [hover, setHover] = useState(false)
+  const [hover, setHover] = useState(false);
 
   const onHover = () => {
-    setHover(!hover)
-  }
+    setHover(!hover);
+  };
   return (
     <HeroContainer>
       <HeroBg>
@@ -35,18 +35,18 @@ const HeroSection = () => {
             <H1>Hello World,</H1>
           </Typing>
           <Span>
-            <p>My name is Abdul Rehman</p>
+            <p>My name is AbdulRehman</p>
             <p>An Engineering Graduate</p>
             <Type>
-              turned <Type className='bold'>WEB</Type> developer
+              turned <Type className='bold'>FULL STACK</Type> developer
             </Type>
             <p>located in</p>
             <p>
-              <b>Toronto, ON.</b>
+              <Type className='location'>Toronto, ON.</Type>
             </p>
             <Carry>
               <p>And I love to : </p>
-              <Typing speed={150}>
+              <Typing speed={70}>
                 <Typedout>build things</Typedout>
               </Typing>
               <CursorSpan>|</CursorSpan>
@@ -58,7 +58,7 @@ const HeroSection = () => {
         </Content>
       </HeroBg>
     </HeroContainer>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
