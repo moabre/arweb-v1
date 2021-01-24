@@ -26,6 +26,8 @@ const Footer = () => {
   };
 
   const handleChange = (e) => setForm({ [e.target.name]: e.target.value });
+
+  const { name, email, subject, message } = form;
   return (
     <Background id='contact'>
       <Title>Get in touch</Title>
@@ -39,6 +41,7 @@ const Footer = () => {
           <input
             type='text'
             name='name'
+            value={name}
             onChange={(e) => handleChange(e)}
             required
           />
@@ -46,6 +49,7 @@ const Footer = () => {
           <input
             type='email'
             name='email'
+            value={email}
             onChange={(e) => handleChange(e)}
             required
           />
@@ -53,12 +57,14 @@ const Footer = () => {
           <input
             type='subject'
             name='subject'
+            value={subject}
             onChange={(e) => handleChange(e)}
             required
           />
           <label>Message</label>
           <textarea
             name='message'
+            value={message}
             onChange={(e) => handleChange(e)}
             required
           ></textarea>
