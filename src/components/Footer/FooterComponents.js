@@ -4,10 +4,7 @@ export const Title = styled.h1`
   color: white;
   background-color: black;
   text-align: center;
-  padding-top: 3rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 3rem;
+  padding: 5rem 1rem 2rem 1rem;
   font-size: 3rem;
   border-bottom: 3px solid #01bf71;
   &:hover {

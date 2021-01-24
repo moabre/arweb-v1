@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Title = styled.h1`
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-bottom: 1rem;
   font-size: 3rem;
 `;
 export const ProjectContainer = styled.div`
