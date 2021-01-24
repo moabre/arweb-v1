@@ -1,7 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Title, FormContainer, Background, Greeting } from './FooterComponents';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 const Footer = () => {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    comment: '',
+  });
+
+  const handleSubmit = (e) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...form }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error));
+  };
+
+  const handleChange = (e) => setForm({ [e.target.name]: e.target.value });
   return (
     <Background id='contact'>
       <Title>Get in touch</Title>
@@ -10,15 +34,34 @@ const Footer = () => {
         <br></br> <br></br>Feel free to send me a message!
       </Greeting>
       <FormContainer>
-        <form name='contact' method='POST' data-netlify='true'>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <label>Name</label>
-          <input type='text' name='name' required />
+          <input
+            type='text'
+            name='name'
+            onChange={(e) => handleChange(e)}
+            required
+          />
           <label>Email</label>
-          <input type='email' name='email' required />
+          <input
+            type='email'
+            name='email'
+            onChange={(e) => handleChange(e)}
+            required
+          />
           <label>Subject</label>
-          <input type='subject' name='subject' required />
+          <input
+            type='subject'
+            name='subject'
+            onChange={(e) => handleChange(e)}
+            required
+          />
           <label>Message</label>
-          <textarea name='message' required></textarea>
+          <textarea
+            name='message'
+            onChange={(e) => handleChange(e)}
+            required
+          ></textarea>
           <div>
             <button type='submit'>Send</button>
           </div>
