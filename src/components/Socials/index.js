@@ -1,6 +1,6 @@
 import React from 'react';
 import socials from './data';
-import { SocialWrapper, Rights } from './SocialComponents';
+import { SocialWrapper } from './SocialComponents';
 
 const Socials = () => {
   return (
