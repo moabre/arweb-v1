@@ -21,7 +21,7 @@ const Footer = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...form }),
     })
-      .then(() => window.location.href('/thank-you/'))
+      .then(() => alert('submitted'))
       .catch((error) => alert(error));
   };
 
