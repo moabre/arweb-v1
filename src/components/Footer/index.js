@@ -15,6 +15,7 @@ const Footer = () => {
           data-netlify='true'
           name='contact'
           method='post'
+          netlify-honeypot='bot-field'
         >
           <input type='hidden' name='form-name' value='contact' />
           <label>Name</label>
