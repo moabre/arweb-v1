@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../components/Footer';
 import HeroSection from '../components/Hero';
 import InfoSection from '../components/InfoSection';
 import { Navbar } from '../components/NavBar';
@@ -15,6 +16,7 @@ export const Home = () => {
       <HeroSection />
       <InfoSection />
       <ProjectSection />
+      <Footer />
     </>
   );
 };

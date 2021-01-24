@@ -9,9 +9,25 @@ const projects = [
     img: gitview,
     title: 'GitView',
     description:
-      ' A web application that takes the github username and displays the data in charts and dynamically generates a list of repos.',
+      ' A web application that takes the github username and displays the data in charts and dynamically generates a list of repos. Made with particle js so feel free to check out the demo and click away at the screen for some fun!',
     git: 'https://github.com/moabre/GitView',
     demo: 'https://trusting-kalam-802f3a.netlify.app/',
+  },
+  {
+    img: budget,
+    title: 'Budget',
+    description:
+      'A project I built within a few days. This was done to tackle the problem of keeping track of my receipts. Using tesseract.js, this website is able to take pictures as an input and convert it to text. ',
+    git: 'https://github.com/moabre/budget',
+    demo: '',
+  },
+  {
+    img: inventory,
+    title: 'Inventory',
+    description:
+      'A group project done in which we created an REST API using Node.js and Express. The project was done to create an inventory tracking system allowing users to input, edit, delete, information pretaining to items in the warehouses.',
+    git: 'https://github.com/moabre/inventory',
+    demo: '',
   },
   {
     img: celeblook,
@@ -25,24 +41,8 @@ const projects = [
     img: personalwebsite,
     title: 'Personal Website',
     description:
-      'Yes, this very website that you are on! Built using React.js, styled components, react scroll, and much much more!',
+      'Yes, this very website that you are on ! Built using React.js, styled components, react scroll, and much much more !',
     git: 'https://github.com/moabre/arweb-v1',
-    demo: '',
-  },
-  {
-    img: inventory,
-    title: 'Inventory',
-    description:
-      'A group project done in which we created an REST API using Node.js and Express. The project was done to create an inventory tracking system allowing users to input, edit, delete, information pretaining to items in the warehouses.',
-    git: 'https://github.com/moabre/inventory',
-    demo: '',
-  },
-  {
-    img: budget,
-    title: 'Budget',
-    description:
-      'A project I built within a few days. This was done to tackle the problem of keeping track of my receipts. Using tesseract.js, this website is able to take pictures as an input and convert it to text. ',
-    git: 'https://github.com/moabre/budget',
     demo: '',
   },
 ];

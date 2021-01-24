@@ -22,29 +22,27 @@ export const ProjectContainer = styled.div`
 
 export const ProjectWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 3rem;
-  margin-top: 2rem;
+  margin: auto 0;
   justify-content: center;
+  justify-items: center;
   padding: 2rem;
   width: 100%;
   max-width: 1200px !important;
-  /* @media screen and (min-width: 768px) {
-    max-height: 600px !important;
-  } */
 `;
 
 export const Projects = styled.div`
   background-color: '#fff';
-  margin: auto 0;
-  max-width: 700px;
+  margin: auto 0 auto 0;
+  max-width: 450px;
   box-shadow: 0 5px 30px 15px rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem;
+  height: 100%;
   &:hover {
     box-shadow: 0 5px 30px 15px rgba(0, 0, 0, 0.4);
     transform: scale(1.01);
@@ -53,10 +51,11 @@ export const Projects = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    margin: 0 0 auto 0;
     border-radius: 0.5rem;
     box-shadow: 0 5px 30px 15px rgba(0, 0, 0, 0.2);
-    height: 350px;
-    max-width: 100%;
+    width: 100%;
+    cursor: pointer;
   }
 
   & > h1 {
@@ -67,18 +66,16 @@ export const Projects = styled.div`
     background-repeat: repeat-x;
   }
   & > span {
-    padding-top: 0.5rem;
+    padding: 1.6rem;
     height: 130px;
     text-align: justify;
-    padding: 0.5rem;
   }
   & > div {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 30px;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
 
   & > div > a {
@@ -90,11 +87,13 @@ export const Projects = styled.div`
     border: 0.5px solid black;
     font-size: 1rem;
     border-radius: 0.25rem;
+    box-shadow: 0 5px 30px 15px rgba(0, 0, 0, 0.1);
   }
 
   & > div > a:hover {
     color: #01bf71;
     transform: scale(1.01);
     font-size: 1.3rem;
+    background-color: black;
   }
 `;

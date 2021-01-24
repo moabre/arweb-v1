@@ -23,7 +23,7 @@ const HeroSection = () => {
     setHover(!hover);
   };
   return (
-    <HeroContainer>
+    <HeroContainer id='about'>
       <HeroBg>
         <Img
           src='https://i.ibb.co/mvVHvLH/IMG-8973.jpg'
@@ -52,7 +52,17 @@ const HeroSection = () => {
               <CursorSpan>|</CursorSpan>
             </Carry>
           </Span>
-          <Button to='projects' onMouseEnter={onHover} onMouseLeave={onHover}>
+          <Button
+            to='projects'
+            type='submit'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+          >
             View my work {hover ? <ArrowDown /> : <ArrowDownShort />}{' '}
           </Button>
         </Content>

@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { BsArrowDownShort, BsArrowDown } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 //keyframe animations
 const typewriter = keyframes`
@@ -129,7 +130,7 @@ export const CursorSpan = styled.span`
   padding-left: 2px;
   animation: ${blink} 1s step-end infinite;
 `;
-export const Button = styled.button`
+export const Button = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;

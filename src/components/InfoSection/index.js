@@ -15,7 +15,7 @@ import {
 export const InfoSection = () => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer id='resume'>
         <InfoWrapper>
           <ContentWrapper>
             <TitleWrapper className='content'>

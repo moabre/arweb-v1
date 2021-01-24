@@ -8,33 +8,60 @@ import {
 } from './ProjectComponents';
 
 const ProjectSection = () => {
+  const redirect = (url) => {
+    const win = window.open(url, '_blank');
+    win.focus();
+  };
   return (
-    <>
-      <Title>Projects Recently Worked On</Title>
+    <div id='projects'>
+      <Title>Some Projects I Have Worked On</Title>
       <ProjectContainer>
         <ProjectWrapper>
           {projects.map((i) => {
             return (
-              <Projects>
-                <img src={i.img} alt={i.title} />
-                <h1>{i.title}</h1>
-                <span>{i.description}</span>
-                <div>
-                  <a href={i.git} target='_blank' rel='noreferrer'>
-                    Code
-                  </a>
-                  {i.demo ? (
-                    <a href={i.demo} target='_blank' rel='noreferrer'>
-                      Demo
-                    </a>
-                  ) : null}
-                </div>
-              </Projects>
+              <>
+                {i.demo ? (
+                  <Projects key={i}>
+                    <img
+                      src={i.img}
+                      alt={i.title}
+                      onClick={() => redirect(i.demo)}
+                    />
+                    <h1>{i.title}</h1>
+                    <span>{i.description}</span>
+                    <div>
+                      <a href={i.git} target='_blank' rel='noreferrer'>
+                        Code
+                      </a>
+                      {i.demo ? (
+                        <a href={i.demo} target='_blank' rel='noreferrer'>
+                          Demo
+                        </a>
+                      ) : null}
+                    </div>
+                  </Projects>
+                ) : (
+                  <Projects key={i}>
+                    <img
+                      src={i.img}
+                      alt={i.title}
+                      onClick={() => redirect(i.git)}
+                    />
+                    <h1>{i.title}</h1>
+                    <span>{i.description}</span>
+                    <div>
+                      <a href={i.git} target='_blank' rel='noreferrer'>
+                        Code
+                      </a>
+                    </div>
+                  </Projects>
+                )}
+              </>
             );
           })}
         </ProjectWrapper>
       </ProjectContainer>
-    </>
+    </div>
   );
 };
 
