@@ -73,20 +73,30 @@ export const Title = styled.h1`
   font-size: 3rem;
   padding: 2rem;
   justify-self: center;
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
   &:hover {
     color: #01bf71;
   }
-  /* &.content {
-    margin-bottom: auto;
-  } */
 `;
 
 export const TitleContent = styled.p`
   font-size: 1.7rem;
   padding: 1rem;
   max-height: 600px;
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
   &.content {
     justify-self: center;
+    text-align: justify;
     margin: auto 0;
   }
 `;

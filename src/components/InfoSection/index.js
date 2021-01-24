@@ -21,9 +21,11 @@ export const InfoSection = () => {
             <TitleWrapper className='content'>
               <Title className='content'>Resume</Title>
               <TitleContent className='content'>
-                I have a keen interest in all stages of development and always
-                eagar to learn more in this fast paced industry. Grab a copy of
-                my resume below to see how I can contribute!
+                Pursuing a career in web development because I love problem
+                solving and creating impactful web services. My interests lie in
+                both the front-end and back-end of development. Eagar to learn
+                more in this fast paced industry. Grab a copy of my resume below
+                to see how I can contribute!
               </TitleContent>
               <a href={resume} target='_blank' rel='noreferrer'>
                 <Button>Grab A Copy</Button>

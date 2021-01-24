@@ -7,6 +7,12 @@ export const Title = styled.h1`
   padding-left: 1rem;
   padding-bottom: 1rem;
   font-size: 3rem;
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 export const ProjectContainer = styled.div`
   color: black;

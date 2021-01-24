@@ -25,7 +25,7 @@ const projects = [
     img: inventory,
     title: 'Inventory',
     description:
-      'A group project done in which we created an REST API using Node.js and Express. The project was done to create an inventory tracking system allowing users to input, edit, delete, information pretaining to items in the warehouses.',
+      'A group project done in which we created a REST API using Node.js and Express. The project was done to create an inventory tracking system allowing users to input, edit, delete, information pretaining to items in the warehouses.',
     git: 'https://github.com/moabre/inventory',
     demo: '',
   },

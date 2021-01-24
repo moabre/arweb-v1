@@ -7,6 +7,12 @@ export const Title = styled.h1`
   padding: 5rem 1rem 2rem 1rem;
   font-size: 3rem;
   border-bottom: 3px solid #01bf71;
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
   &:hover {
     color: #01bf71;
   }
@@ -87,4 +93,10 @@ export const Greeting = styled.span`
   font-size: 1.8rem;
   text-align: center;
   padding: 2rem;
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 `;
