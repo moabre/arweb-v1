@@ -67,7 +67,6 @@ export const Projects = styled.div`
   }
   & > span {
     padding: 1.6rem;
-    height: 130px;
     text-align: justify;
   }
   & > div {
