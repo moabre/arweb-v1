@@ -22,9 +22,9 @@ export const ImageWrapper = styled.div`
   width: 100%;
   max-width: 600px !important;
   @media screen and (min-width: 768px) {
-    max-height: 600px !important;
+    max-height: 900px !important;
   }
-  & > img {
+  & > a > img {
     display: flex;
     height: 100%;
     width: 100%;
@@ -36,7 +36,7 @@ export const ImageWrapper = styled.div`
     filter: grayscale(100%);
   }
 
-  & > img:hover {
+  & > a > img:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     cursor: pointer;
@@ -44,13 +44,16 @@ export const ImageWrapper = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
   align-items: center;
   justify-content: center;
   flex-direction: row;
   height: 100%;
   width: 100%;
-  @media screen and (max-width: 840px) {
+  padding: 1rem;
+  @media screen and (max-width: 870px) {
+    display: flex;
     flex-direction: column;
   }
 `;
@@ -58,15 +61,12 @@ export const InfoWrapper = styled.div`
 export const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 1rem;
   text-align: center;
-  &.content {
-    height: 600px;
-  }
 `;
 
 export const Title = styled.h1`
@@ -76,14 +76,18 @@ export const Title = styled.h1`
   &:hover {
     color: #01bf71;
   }
+  /* &.content {
+    margin-bottom: auto;
+  } */
 `;
 
 export const TitleContent = styled.p`
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding: 1rem;
   max-height: 600px;
   &.content {
     justify-self: center;
+    margin: auto 0;
   }
 `;
 
@@ -106,15 +110,15 @@ export const Button = styled.button`
   max-height: 40px;
   width: 232px;
   height: 5vh;
-  font-size: 1.2rem;
-  margin: 1rem;
+  font-size: 1.4rem;
+  margin: 3rem;
   cursor: pointer;
 
   &:hover {
     color: #01bf71;
     background: black;
     transition: 0.2s ease-in-out;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     height: 8vh;
     border-style: none;
   }
