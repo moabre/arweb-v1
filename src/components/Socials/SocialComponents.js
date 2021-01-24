@@ -10,7 +10,7 @@ export const SocialWrapper = styled.div`
     0deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(0, 0, 0, 1) 65%,
-    rgba(8, 1, 1, 1) 100%
+    rgba(0, 0, 0, 1) 100%
   );
 
   & > a > img {
