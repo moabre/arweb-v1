@@ -1,34 +1,7 @@
 import React from 'react';
 import { Title, FormContainer, Background, Greeting } from './FooterComponents';
 
-// const encode = (data) => {
-//   return Object.keys(data)
-//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-//     .join('&');
-// };
-
 const Footer = () => {
-  // const [form, setForm] = useState({
-  //   name: '',
-  //   email: '',
-  //   subject: '',
-  //   comment: '',
-  // });
-
-  // const handleSubmit = (e) => {
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: encode({ 'form-name': 'contact', ...form }),
-  //   })
-  //     .then(() => alert('submitted'))
-  //     .catch((error) => alert(error));
-
-  //   e.preventDefault();
-  // };
-  // const handleChange = (e) => setForm({ [e.target.name]: e.target.value });
-
-  // const { name, email, subject, message } = form;
   return (
     <Background id='contact'>
       <Title>Get in touch</Title>
