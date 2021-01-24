@@ -37,6 +37,7 @@ const Footer = () => {
       </Greeting>
       <FormContainer>
         <form onSubmit={(e) => handleSubmit(e)}>
+          <input type='hidden' name='form-name' value='contact' />
           <label>Name</label>
           <input
             type='text'
