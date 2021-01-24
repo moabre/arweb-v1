@@ -21,7 +21,7 @@ const Footer = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...form }),
     })
-      .then(() => alert('Success!'))
+      .then(() => window.location.href('/thank-you/'))
       .catch((error) => alert(error));
   };
 
@@ -36,7 +36,12 @@ const Footer = () => {
         <br></br> <br></br>Feel free to send me a message!
       </Greeting>
       <FormContainer>
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form
+          data-netlify='true'
+          name='contact'
+          method='post'
+          onSubmit={(e) => handleSubmit(e)}
+        >
           <input type='hidden' name='form-name' value='contact' />
           <label>Name</label>
           <input
