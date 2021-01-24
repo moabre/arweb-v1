@@ -23,8 +23,9 @@ const Footer = () => {
     })
       .then(() => alert('submitted'))
       .catch((error) => alert(error));
-  };
 
+    e.preventDefault();
+  };
   const handleChange = (e) => setForm({ [e.target.name]: e.target.value });
 
   const { name, email, subject, message } = form;
