@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Title, FormContainer, Background, Greeting } from './FooterComponents';
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
+// const encode = (data) => {
+//   return Object.keys(data)
+//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&');
+// };
 
 const Footer = () => {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    comment: '',
-  });
+  // const [form, setForm] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   comment: '',
+  // });
 
-  const handleSubmit = (e) => {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...form }),
-    })
-      .then(() => alert('submitted'))
-      .catch((error) => alert(error));
+  // const handleSubmit = (e) => {
+  //   fetch('/', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({ 'form-name': 'contact', ...form }),
+  //   })
+  //     .then(() => alert('submitted'))
+  //     .catch((error) => alert(error));
 
-    e.preventDefault();
-  };
-  const handleChange = (e) => setForm({ [e.target.name]: e.target.value });
+  //   e.preventDefault();
+  // };
+  // const handleChange = (e) => setForm({ [e.target.name]: e.target.value });
 
-  const { name, email, subject, message } = form;
+  // const { name, email, subject, message } = form;
   return (
     <Background id='contact'>
       <Title>Get in touch</Title>
@@ -38,43 +38,20 @@ const Footer = () => {
       </Greeting>
       <FormContainer>
         <form
+          action='/contact'
           data-netlify='true'
           name='contact'
           method='post'
-          onSubmit={(e) => handleSubmit(e)}
         >
           <input type='hidden' name='form-name' value='contact' />
           <label>Name</label>
-          <input
-            type='text'
-            name='name'
-            value={name}
-            onChange={(e) => handleChange(e)}
-            required
-          />
+          <input type='text' name='name' required />
           <label>Email</label>
-          <input
-            type='email'
-            name='email'
-            value={email}
-            onChange={(e) => handleChange(e)}
-            required
-          />
+          <input type='email' name='email' required />
           <label>Subject</label>
-          <input
-            type='subject'
-            name='subject'
-            value={subject}
-            onChange={(e) => handleChange(e)}
-            required
-          />
+          <input type='subject' name='subject' required />
           <label>Message</label>
-          <textarea
-            name='message'
-            value={message}
-            onChange={(e) => handleChange(e)}
-            required
-          ></textarea>
+          <textarea name='message' required></textarea>
           <div>
             <button type='submit'>Send</button>
           </div>
