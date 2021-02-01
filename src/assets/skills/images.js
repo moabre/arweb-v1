@@ -1,73 +1,86 @@
+import html from './html-5.svg';
+import css from './css-3.svg';
+import sass from './sass.svg';
+import js from './javascript.svg';
+import react from './react.svg';
+import node from './nodejs.svg';
+import express from './express.svg';
+import mysql from './mysql.svg';
+import mongodb from './mongodb.svg';
+import python from './python.svg';
+import git from './git-icon.svg';
+import ai from './ai.svg';
+
 const images = [
   {
     id: 1,
-    src: 'https://svgshare.com/i/TQk.svg',
+    src: html,
     title: 'html-5',
     link: 'https://www.w3schools.com/html/',
   },
   {
     id: 2,
-    src: 'https://svgshare.com/i/TQa.svg',
+    src: css,
     title: 'css-3',
     link: 'https://www.w3schools.com/css/',
   },
   {
     id: 3,
-    src: 'https://svgshare.com/i/TRT.svg',
+    src: sass,
     title: 'sass',
     link: 'https://sass-lang.com/',
   },
   {
     id: 4,
-    src: 'https://svgshare.com/i/TRU.svg',
+    src: js,
     title: 'js',
     link: 'https://www.w3schools.com/js/DEFAULT.asp',
   },
   {
     id: 5,
-    src: 'https://svgshare.com/i/TR7.svg',
+    src: react,
     title: 'react',
     link: 'https://reactjs.org/',
   },
   {
     id: 6,
-    src: 'https://svgshare.com/i/TPv.svg',
+    src: node,
     title: 'Node JS',
     link: 'https://nodejs.org/en/',
   },
   {
     id: 7,
-    src: 'https://svgshare.com/i/TQo.svg',
+    src: express,
     title: 'express',
     link: 'https://expressjs.com/',
   },
   {
     id: 8,
-    src: 'https://svgshare.com/i/TPw.svg',
+    src: mysql,
     title: 'mysql',
     link: 'https://www.mysql.com/',
   },
   {
     id: 9,
-    src: 'https://svgshare.com/i/TQF.svg',
+    src: mongodb,
     title: 'mongoDb',
     link: 'https://www.mongodb.com/',
   },
   {
     id: 10,
-    src: 'https://svgshare.com/i/TRV.svg',
+    src: python,
     title: 'python',
     link: 'https://www.python.org/',
   },
   {
     id: 11,
-    src: 'https://svgshare.com/i/TNU.svg',
+    src: git,
     title: 'git',
     link: 'https://git-scm.com/',
   },
   {
     id: 12,
-    src: 'https://svgshare.com/i/TRH.svg',
+    src: ai,
     title: 'ai',
     link:
       'https://www.adobe.com/ca/products/illustrator.html?promoid=PGRQQLFS&mv=other',
