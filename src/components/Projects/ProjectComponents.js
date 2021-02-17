@@ -22,9 +22,6 @@ export const ProjectContainer = styled.div`
   justify-content: center;
   width: 100vw;
   min-height: 800px;
-  /* @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  } */
 `;
 
 export const ProjectWrapper = styled.div`

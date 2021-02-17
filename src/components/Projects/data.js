@@ -48,7 +48,7 @@ const projects = [
   },
   {
     img: reduxtest,
-    title: 'Setting Up Basix Redux App',
+    title: 'Basic Redux App',
     description:
       'This project was setup to experiment with redux and create a small booklist.',
     git: 'https://github.com/moabre/redux-test',
