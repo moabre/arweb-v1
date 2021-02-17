@@ -3,6 +3,7 @@ import celeblook from '../../assets/projectpics/celeblook.JPG';
 import personalwebsite from '../../assets/projectpics/personalwebsite.png';
 import inventory from '../../assets/projectpics/inventory.png';
 import budget from '../../assets/projectpics/budget.png';
+import reduxtest from '../../assets/projectpics/redux-website.png';
 
 const projects = [
   {
@@ -44,6 +45,14 @@ const projects = [
       'Yes, this very website that you are on ! Built using React.js, styled components, react scroll, and much much more !',
     git: 'https://github.com/moabre/arweb-v1',
     demo: '',
+  },
+  {
+    img: reduxtest,
+    title: 'Setting Up Basix Redux App',
+    description:
+      'This project was setup to experiment with redux and create a small booklist.',
+    git: 'https://github.com/moabre/redux-test',
+    demo: 'https://trusting-dubinsky-2def93.netlify.app/',
   },
 ];
 
