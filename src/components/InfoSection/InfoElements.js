@@ -96,7 +96,6 @@ export const TitleContent = styled.p`
   }
   &.content {
     justify-self: center;
-    text-align: justify;
     margin: auto 0;
   }
 `;
