@@ -4,6 +4,7 @@ import personalwebsite from '../../assets/projectpics/personalwebsite.png';
 import inventory from '../../assets/projectpics/inventory.png';
 import budget from '../../assets/projectpics/budget.png';
 import reduxtest from '../../assets/projectpics/redux-website.png';
+import graphchat from '../../assets/projectpics/graph-chat.png';
 
 const projects = [
   {
@@ -53,6 +54,14 @@ const projects = [
       'This project was setup to experiment with redux and create a small booklist.',
     git: 'https://github.com/moabre/redux-test',
     demo: 'https://trusting-dubinsky-2def93.netlify.app/',
+  },
+  {
+    img: graphchat,
+    title: 'Graph Chat',
+    description:
+      'This project uses webpack, node, graphql, websockets, react-bootstrap, and express. The backend is hosted on heroku while the frontend is hosted on netlify. Due to the server being on heroku there might be a few second delay as the server wakes up. Have fun and open multiple links, change the names, and converse!',
+    git: 'https://github.com/moabre/graph-chat',
+    demo: 'https://friendly-newton-244193.netlify.app/',
   },
 ];
 
