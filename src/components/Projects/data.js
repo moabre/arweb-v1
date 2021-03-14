@@ -5,6 +5,8 @@ import inventory from '../../assets/projectpics/inventory.png';
 import budget from '../../assets/projectpics/budget.png';
 import reduxtest from '../../assets/projectpics/redux-website.png';
 import graphchat from '../../assets/projectpics/graph-chat.png';
+import socialNetwork from '../../assets/projectpics/social-network.png';
+import jwtAuth from '../../assets/projectpics/JWT-auth.png';
 
 const projects = [
   {
@@ -14,6 +16,14 @@ const projects = [
       ' A web application that takes the github username and displays the data in charts and dynamically generates a list of repos. Made with particle js so feel free to check out the demo and click away at the screen for some fun!',
     git: 'https://github.com/moabre/GitView',
     demo: 'https://trusting-kalam-802f3a.netlify.app/',
+  },
+  {
+    img: socialNetwork,
+    title: 'social-network',
+    description:
+      'This project is made using the MERN technology stack. Built with Material-UI, Redux, Express, Mongoose, JWT Auth, etc. This was a fun and learned the importance of the use of Redux. The backend is built on Node and using the Express web framework. All the authentication is handled on the server and images are hosted on google firebase storage.',
+    git: 'https://github.com/moabre/social-network',
+    demo: 'https://social-network23.herokuapp.com/',
   },
   {
     img: budget,
@@ -62,6 +72,14 @@ const projects = [
       'This project uses webpack, node, graphql, websockets, react-bootstrap, and express. The backend is hosted on heroku while the frontend is hosted on netlify. Due to the server being on heroku there might be a few second delay as the server wakes up. Have fun and open multiple links, change the names, and converse!',
     git: 'https://github.com/moabre/graph-chat',
     demo: 'https://friendly-newton-244193.netlify.app/',
+  },
+  {
+    img: jwtAuth,
+    title: 'JWT-Auth',
+    description:
+      'This project is made using Node, Mongoose, and MongoDb. The purpose was to create a template for user auth and ensure protected routes on the back end.',
+    git: 'https://github.com/moabre/JWT-auth',
+    demo: '',
   },
 ];
 
