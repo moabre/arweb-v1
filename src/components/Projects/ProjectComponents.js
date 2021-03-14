@@ -59,6 +59,7 @@ export const Projects = styled.div`
     border-radius: 0.5rem;
     box-shadow: 0 5px 30px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
+    height: 50%;
     cursor: pointer;
   }
 
@@ -71,7 +72,8 @@ export const Projects = styled.div`
   }
   & > span {
     padding: 1.6rem;
-    text-align: justify;
+    text-align: center;
+    width: 90%;
   }
   & > div {
     display: flex;
