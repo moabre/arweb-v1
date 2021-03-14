@@ -53,7 +53,7 @@ const projects = [
     img: personalwebsite,
     title: 'Personal Website',
     description:
-      'Yes, this very website that you are on ! Built using React.js, styled components, react scroll, and much much more !',
+      'Yes, this very website that you are on! Built using React.js, styled components, react scroll, and much much more!',
     git: 'https://github.com/moabre/arweb-v1',
     demo: '',
   },
