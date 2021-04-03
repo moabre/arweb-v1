@@ -77,7 +77,7 @@ const projects = [
     img: graphchat,
     title: 'Graph Chat',
     description:
-      'This project uses webpack, node, graphql, websockets, react-bootstrap, and express. Have fun and open multiple links, change the names, and converse!',
+      'This project uses webpack, node, graphql, websockets, react-bootstrap, and express. Have fun and open multiple links and converse!',
     git: 'https://github.com/moabre/graph-chat',
     demo: 'https://friendly-newton-244193.netlify.app/',
   },
