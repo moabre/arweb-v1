@@ -66,20 +66,20 @@ const projects = [
     demo: 'https://trusting-dubinsky-2def93.netlify.app/',
   },
   {
-    img: graphchat,
-    title: 'Graph Chat',
-    description:
-      'This project uses webpack, node, graphql, websockets, react-bootstrap, and express. The backend is hosted on heroku while the frontend is hosted on netlify. Due to the server being on heroku there might be a few second delay as the server wakes up. Have fun and open multiple links, change the names, and converse!',
-    git: 'https://github.com/moabre/graph-chat',
-    demo: 'https://friendly-newton-244193.netlify.app/',
-  },
-  {
     img: jwtAuth,
     title: 'JWT-Auth',
     description:
       'This project is made using Node, Mongoose, and MongoDb. The purpose was to create a template for user auth and ensure protected routes on the back end.',
     git: 'https://github.com/moabre/JWT-auth',
     demo: '',
+  },
+  {
+    img: graphchat,
+    title: 'Graph Chat',
+    description:
+      'This project uses webpack, node, graphql, websockets, react-bootstrap, and express. Have fun and open multiple links, change the names, and converse!',
+    git: 'https://github.com/moabre/graph-chat',
+    demo: 'https://friendly-newton-244193.netlify.app/',
   },
 ];
 
