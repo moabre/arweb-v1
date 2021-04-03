@@ -21,7 +21,7 @@ const projects = [
     img: socialNetwork,
     title: 'social-network',
     description:
-      'This project is made using the MERN technology stack. Built with Material-UI, Redux, Express, Mongoose, JWT Auth, etc. This was a fun and learned the importance of the use of Redux. The backend is built on Node and using the Express web framework. All the authentication is handled on the server and images are hosted on google firebase storage.',
+      'This project is made using the MERN technology stack. Built with Material-UI, Redux, Express, Mongoose, JWT Auth, etc. The backend is built on Node and using the Express web framework. All the authentication is handled on the server and images are hosted on google firebase storage.',
     git: 'https://github.com/moabre/social-network',
     demo: 'https://social-network23.herokuapp.com/',
   },
