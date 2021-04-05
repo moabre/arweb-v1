@@ -23,7 +23,7 @@ export const InfoSection = () => {
               <TitleContent className='content'>
                 Pursuing a career in web development because I love problem
                 solving and creating impactful web services. My interests lie in
-                both the front-end and back-end of development. Eagar to learn
+                both the front-end and back-end of development. Eager to learn
                 more in this fast paced industry. Grab a copy of my resume below
                 to see how I can contribute!
               </TitleContent>
