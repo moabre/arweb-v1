@@ -1,6 +1,6 @@
-import React from 'react';
-import images from '../../assets/skills/images';
-import resume from '../../assets/muhammadrehmanresume.pdf';
+import React from "react";
+import images from "../../assets/skills/images";
+import resume from "../../assets/Muhammad_Rehman_Resume-FrontEnd.pdf";
 import {
   InfoContainer,
   InfoWrapper,
@@ -10,24 +10,24 @@ import {
   TitleContent,
   ContentWrapper,
   Button,
-} from './InfoElements';
+} from "./InfoElements";
 
 export const InfoSection = () => {
   return (
     <>
-      <InfoContainer id='resume'>
+      <InfoContainer id="resume">
         <InfoWrapper>
           <ContentWrapper>
-            <TitleWrapper className='content'>
-              <Title className='content'>Resume</Title>
-              <TitleContent className='content'>
+            <TitleWrapper className="content">
+              <Title className="content">Resume</Title>
+              <TitleContent className="content">
                 Pursuing a career in web development because I love problem
                 solving and creating impactful web services. My interests lie in
                 both the front-end and back-end of development. Eager to learn
                 more in this fast paced industry. Grab a copy of my resume below
                 to see how I can contribute!
               </TitleContent>
-              <a href={resume} target='_blank' rel='noreferrer'>
+              <a href={resume} target="_blank" rel="noreferrer">
                 <Button>Grab A Copy</Button>
               </a>
             </TitleWrapper>
@@ -40,7 +40,7 @@ export const InfoSection = () => {
               {images.map((index) => {
                 return (
                   <>
-                    <a href={index.link} target='_blank' rel='noreferrer'>
+                    <a href={index.link} target="_blank" rel="noreferrer">
                       <img src={index.src} alt={index.title} id={index} />
                     </a>
                   </>
