@@ -1,6 +1,6 @@
 import React from "react";
 import images from "../../assets/skills/images";
-import resume from "../../assets/muhammadrehmanresumefe.pdf";
+import resume from "../../assets/Muhammed_Abdul_Rehman_Resume.pdf";
 import {
   InfoContainer,
   InfoWrapper,
